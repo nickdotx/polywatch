@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 250" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">
+<rect x="0" y="0" width="720" height="250" rx="12" fill="#ffffff"/>
+<text x="20" y="30" font-size="16" font-weight="700" fill="#1b2430">Net ROI by strategy (out-of-sample)</text>
+<line x1="623.9" y1="50" x2="623.9" y2="226.0" stroke="#dde3ea" stroke-width="1"/>
+<text x="188" y="77.0" text-anchor="end" font-size="13" fill="#1b2430">Copy everything</text>
+<rect x="200.0" y="64.0" width="423.9" height="18" rx="3" fill="#c0392b"/>
+<text x="194.0" y="77.0" text-anchor="end" font-size="12" font-weight="600" fill="#5b6675">-2.6%</text>
+<text x="188" y="111.0" text-anchor="end" font-size="13" fill="#1b2430">Scorer-selected (top-k)</text>
+<rect x="467.3" y="98.0" width="156.6" height="18" rx="3" fill="#c0392b"/>
+<text x="461.3" y="111.0" text-anchor="end" font-size="12" font-weight="600" fill="#5b6675">-0.9%</text>
+<text x="188" y="145.0" text-anchor="end" font-size="13" fill="#1b2430">Consensus K-of-N</text>
+<rect x="623.9" y="132.0" width="26.1" height="18" rx="3" fill="#1e8f5a"/>
+<text x="656.0" y="145.0" text-anchor="start" font-size="12" font-weight="600" fill="#5b6675">+0.2%</text>
+<text x="188" y="179.0" text-anchor="end" font-size="13" fill="#1b2430">Favourite-longshot</text>
+<rect x="441.0" y="166.0" width="182.9" height="18" rx="3" fill="#8a8f98"/>
+<text x="435.0" y="179.0" text-anchor="end" font-size="12" font-weight="600" fill="#5b6675">-1.1%</text>
+<text x="188" y="213.0" text-anchor="end" font-size="13" fill="#1b2430">Random selection</text>
+<rect x="491.8" y="200.0" width="132.1" height="18" rx="3" fill="#8a8f98"/>
+<text x="485.8" y="213.0" text-anchor="end" font-size="12" font-weight="600" fill="#5b6675">-0.8%</text>
+</svg>

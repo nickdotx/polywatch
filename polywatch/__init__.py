@@ -1,0 +1,3 @@
+"""Polywatch — Polymarket smart-money tracker (v1)."""
+
+__version__ = "0.1.0"

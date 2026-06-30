@@ -1,0 +1,27 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+.DS_Store
+
+# python packaging / test caches
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+
+# local config / verified pairs (copy from the .example files)
+config.yaml
+pairs.yaml
+
+# runtime artifacts and caches
+*.db
+*.sqlite
+*.sqlite3
+*.csv
+report.html
+RESULTS_*.md
+markets_cache.json
+bt_cache.json
+candidates.yaml

@@ -1,0 +1,28 @@
+# Polywatch configuration. Copy to config.yaml and edit.
+# Everything is read-only; these settings only shape the research runs.
+
+# Wallets to score and validate. Populate this automatically with:
+#   python scripts/pick_wallets.py --gather-only    # broad, unscored pool
+#   python scripts/pick_wallets.py --write 100      # scored top-N
+# pick_wallets labels each wallet with its real on-chain stats, never a nickname.
+# `label` is display-only and optional; leave it blank to invent no identity.
+targets:
+  - address: "0x1615086ace48440b0bc0da28a9dfc3d6e8208f2b"
+    label: ""
+  # - address: "0x..."
+  #   label: ""
+
+# Copy-strategy parameters shared by `backtest` and `walkforward`.
+strategy:
+  stake_usd: 15               # fixed stake per simulated copy
+  min_copy_usd: 100           # ignore target trades smaller than this
+  entry_min_price: 0.05       # skip dust longshots
+  entry_max_price: 0.95       # skip near-certainties
+  categories_allow: []        # e.g. ["politics"] to restrict; empty = all
+  categories_block: []        # e.g. ["sports"] to exclude
+
+# Cost model applied to every simulated copy (gross-vs-net is the whole point).
+costs:
+  slippage_points: 0.02       # fill ~2c worse than the leader
+  fee_pct: 0.0                # platform fee fraction per side
+  latency_points: 0.0         # extra adverse drift from late fills

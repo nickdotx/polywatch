@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "polywatch"
+version = "0.1.0"
+description = "A measurement-first investigation of smart-money copy-trading on Polymarket: out-of-sample walk-forward validation, multiple-testing-aware statistics, and arbitrage scanners."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+keywords = ["polymarket", "kalshi", "prediction-markets", "backtesting",
+            "walk-forward", "quantitative-research"]
+dependencies = [
+    "httpx>=0.28.0",
+    "pydantic>=2.6.0",
+    "PyYAML>=6.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+polywatch = "polywatch.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["polywatch*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

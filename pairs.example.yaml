@@ -1,0 +1,29 @@
+# Verified Polymarket <-> Kalshi event pairs for the cross-arb scanner.
+#
+# CRITICAL: only add a pair AFTER you have personally confirmed both contracts
+# resolve by the EXACT same rule (same event, same date, same source, same
+# void/edge-case handling). A mismatched pair turns "risk-free arb" into a real
+# bet. This is the single biggest way to lose money at cross-platform arb.
+#
+# Fields per pair:
+#   name                      : your label (display only)
+#   polymarket_condition_id   : the 0x... condition id of the Polymarket market
+#   polymarket_yes_index      : which outcome index is "YES" (usually 0)
+#   kalshi_ticker             : the Kalshi market ticker (e.g. KXFED-26JUL-C25)
+#   invert                    : true ONLY if Polymarket-YES means Kalshi-NO
+#
+# Copy this to pairs.yaml and fill in real, verified pairs. Then:
+#   python -m polywatch crossarb --pairs pairs.yaml
+
+pairs:
+  - name: "EXAMPLE - Fed cuts rates at the July 2026 meeting (VERIFY before use)"
+    polymarket_condition_id: "0xREPLACE_ME"
+    polymarket_yes_index: 0
+    kalshi_ticker: "KXREPLACE-ME"
+    invert: false
+
+  # - name: "Another verified pair"
+  #   polymarket_condition_id: "0x..."
+  #   polymarket_yes_index: 0
+  #   kalshi_ticker: "KX..."
+  #   invert: false
